@@ -337,7 +337,7 @@ func getRecomendations(w http.ResponseWriter, req *http.Request, db *sql.DB) {
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	db, err := sql.Open("mysql", "bookking:bookking@tcp(127.1:3306)/bookking")
+	db, err := sql.Open("mysql", "bookking:bookking@tcp(mysql:3306)/bookking")
 	if err != nil {
 		panic(err)
 	}
