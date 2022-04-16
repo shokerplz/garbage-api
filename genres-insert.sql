@@ -1,0 +1,14 @@
+INSERT INTO genres(name) values ("Fiction");
+INSERT INTO genres(name) values ("Mystery");
+INSERT INTO genres(name) values ("Thriller");
+INSERT INTO genres(name) values ("Horror");
+INSERT INTO genres(name) values ("Historical");
+INSERT INTO genres(name) values ("Romantic");
+INSERT INTO genres(name) values ("Western");
+INSERT INTO genres(name) values ("Bildungsroman");
+INSERT INTO genres(name) values ("Fiction");
+INSERT INTO genres(name) values ("Fiction");
+INSERT INTO genres(name) values ("Fantasy");
+INSERT INTO genres(name) values ("Dystopian");
+INSERT INTO genres(name) values ("Realism");
+INSERT INTO genres(name) values ("Literature");
