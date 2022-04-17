@@ -2,6 +2,10 @@ version: "3.9"
 services:
   booking-api:
     build: .
+  nginx:
+    image: "nginx"
+    volumes:
+    - ./vhost.conf:/etc/nginx/conf.d/bookking-api.conf
     ports:
       - "8080:8080"
   mysql:
