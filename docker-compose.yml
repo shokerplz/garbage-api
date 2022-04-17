@@ -6,6 +6,7 @@ services:
     image: "nginx"
     volumes:
     - ./nginx/bookking/vhost.conf:/etc/nginx/conf.d/bookking-api.conf
+    - ./nginx/bookking/static:/var/www/bookking
     ports:
       - "8080:80"
   mysql:
