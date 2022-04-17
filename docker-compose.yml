@@ -5,9 +5,9 @@ services:
   nginx:
     image: "nginx"
     volumes:
-    - ./vhost.conf:/etc/nginx/conf.d/bookking-api.conf
+    - ./nginx/bookking/vhost.conf:/etc/nginx/conf.d/bookking-api.conf
     ports:
-      - "8080:8080"
+      - "80:80"
   mysql:
     image: "mysql:8"
     command: --default-authentication-plugin=mysql_native_password

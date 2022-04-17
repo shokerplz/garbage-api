@@ -360,14 +360,14 @@ func main() {
 		login(w, r, db)
 	})
         http.HandleFunc("/api/v1/my/get-books", func(w http.ResponseWriter, r *http.Request) {
-                if r.Method != http.MethodGet {
+                if r.Method != http.MethodPost {
                         http.Error(w, `{ "status":"error", "msg": "Method not allowed" }`, http.StatusMethodNotAllowed)
 			return
                 }
 		getBooks(w, r, db)
 	})
 	http.HandleFunc("/api/v1/pubic/get-books", func(w http.ResponseWriter, r *http.Request) {
-                if r.Method != http.MethodGet {
+                if r.Method != http.MethodPost {
                         http.Error(w, `{ "status":"error", "msg": "Method not allowed" }`, http.StatusMethodNotAllowed)
 			return
                 }
@@ -388,7 +388,7 @@ func main() {
 		deleteBooks(w, r, db)
 	})
 	http.HandleFunc("/api/v1/my/get-recomendations", func(w http.ResponseWriter, r *http.Request) {
-                if r.Method != http.MethodGet {
+                if r.Method != http.MethodPost {
                         http.Error(w, `{ "status":"error", "msg": "Method not allowed" }`, http.StatusMethodNotAllowed)
 			return
                 }
